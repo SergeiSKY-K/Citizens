@@ -74,6 +74,8 @@ class CitizensTest {
                 new Person(1, "Peter", "Jackson", now.minusYears(23)),
                 new Person(3, "Mary", "Jackson", now.minusYears(20)));
         assertIterableEquals(expected, actual);
+        res = citizens.find("");
+        assertIterableEquals(new ArrayList<>(),res);
     }
 
     @Test
